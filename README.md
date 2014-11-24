@@ -14,8 +14,13 @@ gcc overflow.c -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -o overfl
 ``` 
 
 ```
+<<<<<<< HEAD
 $gdb -g overflow 
 (gdb) run
 (gdb) info req eip
 (gdb) q
 ```
+=======
+gcc -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -o overflow
+``` 
+>>>>>>> 807f9e0a35570a65e02d87532379da29737bc17f
