@@ -11,3 +11,4 @@ main(int argc, char * argv[]){
 	printf("Bye %s %s \n", argv[1], argv[2]);
 	
 }
+//perl -e 'print "A" x 600'
