@@ -14,13 +14,22 @@ gcc overflow.c -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -o overfl
 ``` 
 
 ```
-<<<<<<< HEAD
 $gdb -g overflow 
 (gdb) run
 (gdb) info req eip
 (gdb) q
 ```
-=======
-gcc -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -o overflow
+
+##Example2 : Meet.c
+//notice we start out at user privileges "$"
+
+```
+gcc meet.c -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -z execstack -o meet
 ``` 
->>>>>>> 807f9e0a35570a65e02d87532379da29737bc17f
+
+```
+$gdb -g overflow 
+(gdb) run
+(gdb) info req eip
+(gdb) q
+```
