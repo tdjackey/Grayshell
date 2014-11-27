@@ -27,9 +27,25 @@ $gdb -g overflow
 gcc meet.c -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -z execstack -o meet
 ``` 
 
+
+##Example3 : Shellcode.c
 ```
-$gdb -g overflow 
-(gdb) run
-(gdb) info req eip
-(gdb) q
+gcc -ggdb -mpreferred-stack-boundary=2 -fno-stack-protector -z execstack -o shellcode shellcode.c
+```
+
+
+##Example4 : Repeat return address
+
+```
+gcc -o get_sp get_sp.c
+```
+
+### forbidden ASLR
+```
+echo "0" > /proc/sys/kernel/randomize_va_space 
+``` 
+
+## peercast 
+```
+http://peercast.sourcearchive.com/downloads/0.1214.toots.svn20051112/
 ```
